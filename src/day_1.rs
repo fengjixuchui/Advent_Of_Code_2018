@@ -5,7 +5,6 @@ use std::collections::HashMap;
 
 fn part_2() {
     let input = load_file("resources/day_1_input.txt");
-
     let stopwatch = Stopwatch::start_new();
 
     let numbers = split_by_new_line_integer(input);
@@ -37,9 +36,8 @@ fn part_2() {
 }
 
 fn part_1() {
-    let stopwatch = Stopwatch::start_new();
-
     let input = load_file("resources/day_1_input.txt");
+    let stopwatch = Stopwatch::start_new();
     let numbers = split_by_new_line_integer(input);
     let mut result = 0;
     for number in numbers {

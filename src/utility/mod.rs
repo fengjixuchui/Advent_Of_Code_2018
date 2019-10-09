@@ -17,6 +17,10 @@ pub mod utility {
         input.lines().map(|string: &str| String::from(string)).collect::<Vec<String>>()
     }
 
+    pub fn split_by_new_line_as_char_vector(input : String) -> Vec<Vec<char>> {
+        input.lines().map(|string: &str| String::from(string.trim()).chars().collect()).collect::<Vec<Vec<char>>>()
+    }
+
     pub fn split_by_new_line_integer(input : String) -> Vec<i32> {
         input.lines().map(|string: &str| {
             match string.parse() {
